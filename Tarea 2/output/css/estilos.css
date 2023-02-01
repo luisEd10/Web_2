@@ -1,0 +1,40 @@
+body {
+  background-color: #272727;
+}
+
+header, footer {
+  position: relative;
+}
+
+h1 {
+  text-align: center;
+  color: white;
+}
+
+aside {
+  text-align: left;
+  margin-left: 5px;
+}
+
+section .hobbies div i {
+  margin-top: 5px;
+  font-size: 25px;
+}
+
+section .galeria div img {
+  margin-top: 8px;
+  top: 50%;
+  left: 50%;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  width: 50%;
+}
+
+footer i {
+  margin-top: 8px;
+  top: 50%;
+  left: 50%;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  float: left;
+}

@@ -1,0 +1,76 @@
+@import "variables";
+
+@mixin section_style{
+    width: 25%;
+    background-color: $background_color_section;
+    float: left;
+    border: solid 1px;
+    border-color: $line_color;
+    box-sizing: border-box;
+    text-align: center;
+    @content;
+}
+
+section{
+    margin-top: 2%;
+    margin-bottom: 2%;
+
+    .hobbies div{
+        @include section_style{
+            height: 250px;
+        }
+     
+    }
+
+    .galeria div{
+        @include section_style{
+            margin-top: 10px;
+            height: 300px;
+            position: relative;
+        }
+    }
+}
+
+section .hobbies::after, section .galeria::after{
+    content: "";
+    display: table;
+    clear: both;
+}
+
+@mixin tablet{
+    @media screen and (max-width: 1020px){
+        @content;
+    }
+}
+
+@include tablet{
+    section .hobbies div{
+        width: 50%;
+    }
+    section .galeria div{
+        width: 50%;
+    }
+    section .galeria div img{
+        width: 35%;
+    }
+}
+
+@mixin mobile{
+    @media screen and (max-width:700px){
+        @content;
+    }
+}
+
+@include mobile{
+    section .hobbies div{
+        width: 100%;
+    }
+    section .galeria div{
+        width: 100%;
+    }
+    section .galeria div img{
+        width: 28%;
+    }
+}
+
+
