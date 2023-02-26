@@ -1,0 +1,20 @@
+{
+  "name": "tarea_3",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node .",
+    "styles:dev": "sass src/sass:assets --watch --no-source-map",
+    "dev": "nodemon ."
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2",
+    "sass": "^1.58.3"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.20"
+  }
+}
