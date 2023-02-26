@@ -1,0 +1,59 @@
+@import "variables";
+
+body{
+    background-color: $back_ground_color;
+}
+
+header{ 
+    position: relative;    
+}
+
+h1{
+    text-align: center;
+    color: $line_color;
+}
+
+nav a{
+    margin-left: 3%;
+    margin-right: 3%;
+    font-size: 20px;
+}
+
+nav{
+    text-align: center;
+}
+
+aside{
+    text-align: left;
+    margin-left: 5px;
+}
+
+section .hobbies div i{
+    margin-top: 5px;
+    font-size: 25px;
+}
+
+@mixin image{
+    margin-top: 8px;
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    @content;
+}
+
+section .galeria div img{
+    @include image{
+        width: 50%;
+    }
+}
+
+footer{
+    @extend header;
+
+    i{
+        @include image{
+            float: left;
+        }
+    }
+}
