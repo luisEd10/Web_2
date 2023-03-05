@@ -1,0 +1,16 @@
+body {
+  background-color: #272727;
+}
+
+form {
+  top: 50%;
+  left: 50%;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+form label {
+  color: white;
+  font-size: 30px;
+}
