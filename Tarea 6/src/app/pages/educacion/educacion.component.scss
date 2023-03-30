@@ -1,0 +1,30 @@
+.cargando img{
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    width: 20%;
+}
+
+p{
+    text-align: center;
+    strong{
+        font-size: 150%;
+    }
+}
+
+.container{
+    margin-top: 50px;
+    >div{
+        float: left;
+        width: 50%; 
+    }
+    &:after{
+        content: "";
+        display: table;
+        clear: both;
+    }
+    .Informacion{
+        margin-top: 50px;
+    }
+}

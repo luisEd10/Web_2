@@ -1,0 +1,58 @@
+<div *ngIf="cargando" class="cargando">
+    <img src="https://sp-ao.shortpixel.ai/client/to_webp,q_glossy,ret_img,w_800,h_600/https://codigofuente.io/wp-content/uploads/2018/09/progress.gif" alt="">
+</div>
+
+<p class="title" *ngIf="!cargando"><strong>Cursos</strong></p>
+
+<div class="cursos-listado" *ngIf="!cargando">
+    <ul>
+        <li>
+            Curso de Desarrollo Web en Udemy (2022)
+            <ul>
+                <li>
+                    Aprendí a crear aplicaciones web utilizando HTML, CSS y JavaScript. También aprendí a trabajar con herramientas como Git y GitHub.
+                </li>
+            </ul>
+        </li>
+        <br>
+
+        <li>
+            Curso de Introducción a la Programación en Coursera (2021)
+            <ul>
+                <li>
+                    Aprendí los fundamentos de la programación utilizando Python y desarrollé pequeños proyectos para aplicar los conocimientos adquiridos.
+                </li>
+            </ul>
+        </li>
+        <br>
+
+        <li>
+            Curso de Node.js (2022)
+            <ul>
+                <li>
+                    Aprendí a utilizar Node.js para crear aplicaciones web escalables y de alto rendimiento
+                </li>
+            </ul>
+        </li>
+        <br>
+
+        <li>
+            Curso de MongoDB (2021)
+            <ul>
+                <li>
+                    Aprendí a como almacenar y gestionar datos en una aplicación web.
+                </li>
+            </ul>
+        </li>
+        <br>
+
+        <li>
+            Curso de AWS (2021)
+            <ul>
+                <li>
+                    Aprendí como desarrollar y hospedar aplicaciones web, así como utilizar servicios como EC2, S3, RDS y Elastic Beanstalk para crear, escalar y gestionar aplicaciones web en la nube.
+                </li>
+            </ul>
+        </li>
+    </ul>
+</div>

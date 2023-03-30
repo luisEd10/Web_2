@@ -1,0 +1,37 @@
+.card-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card {
+    display: block;
+    width: 100px;
+    height: 50px;
+    border: 1px solid #ccc;
+    box-shadow: 0 0 5px #ccc;
+    position: relative;
+    background-color: #FFF;
+    transition: box-shadow 0.3s ease-in-out;
+    text-align: center;
+    line-height: 50px;
+    text-decoration: none;
+}
+  
+.card:hover {
+    transform: scale(1.05);
+    z-index: 1;
+    box-shadow: 0 0 10px #ccc;
+}
+  
+.card:hover::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background-color: rgba(0, 0, 0, 0.2);
+}
+  

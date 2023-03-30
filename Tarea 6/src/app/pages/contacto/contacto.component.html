@@ -1,0 +1,26 @@
+<div *ngIf="cargando" class="cargando">
+    <img src="https://sp-ao.shortpixel.ai/client/to_webp,q_glossy,ret_img,w_800,h_600/https://codigofuente.io/wp-content/uploads/2018/09/progress.gif" alt="">
+</div>
+
+<p class="title" *ngIf="!cargando"><strong>Contacto</strong></p>
+
+<div class="container" *ngIf="!cargando">
+    <div>
+        <a href="https://www.linkedin.com/in/luis-eduardo-bruno-selvas-53b636189/" target="_blank">
+            <img src="https://static.vecteezy.com/system/resources/previews/018/930/587/non_2x/linkedin-logo-linkedin-icon-transparent-free-png.png" alt="Linkedin">
+        </a>
+        <p>Linkedin</p>
+    </div>
+    <div>
+        <a href="https://github.com/luisEd10" target="_blank">
+            <img src="https://cdn-icons-png.flaticon.com/512/25/25231.png" alt="Github">
+        </a> 
+        <p>Github</p>
+    </div>
+    <div>
+        <a href="mailto:brunoselvas21e@gmail.com">
+            <img src="https://static.vecteezy.com/system/resources/previews/010/151/138/original/email-and-mail-icon-sign-symbol-design-free-png.png" alt="Correo">
+        </a>  
+        <p>Email</p>
+    </div>
+</div>

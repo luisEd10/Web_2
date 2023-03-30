@@ -1,0 +1,47 @@
+<div *ngIf="cargando" class="cargando">
+    <img src="https://sp-ao.shortpixel.ai/client/to_webp,q_glossy,ret_img,w_800,h_600/https://codigofuente.io/wp-content/uploads/2018/09/progress.gif" alt="">
+</div>
+
+<p class="title" *ngIf="!cargando"><strong>Proyectos</strong></p>
+
+<div class="proyectos-listado" *ngIf="!cargando">
+    <p><strong>Juego de la serpiente</strong></p>
+    <ul>
+        <li>
+            Descripcion: creación de juego de la serpiente puede implicar el desarrollo 
+            de un juego en el que los usuarios controlan una serpiente y deben guiarla a 
+            través de un espacio lleno de obstáculos, mientras se alimenta de pequeños objetos
+            que aparecen en la pantalla.
+        </li>
+        <li>
+            Tecnologías utilizadas:
+            <ul>
+                <li>El lenguaje de programación Java</li>
+                <li>La biblioteca gráfica Swing</li>
+                <li>Eventos de teclado y ratón</li>
+                <li>Algoritmos de detección de colisiones</li>
+                <li>Algoritmos de generación de alimentos</li>
+            </ul>
+        </li>
+    </ul>
+    <p><strong>Pagina web de streaming para peliculas</strong></p>
+    <ul>
+        <li>
+            Descripción: diseño y desarrollo de una plataforma en línea que permita a los usuarios ver 
+            películas en línea a través de una suscripción o compra individual. Esto podría incluir la 
+            implementación de un sistema de registro y inicio de sesión de usuarios, una interfaz de usuario 
+            atractiva y fácil de usar, la implementación de un sistema de recomendación de películas. También podría requerir 
+            el desarrollo de una base de datos robusta para almacenar información sobre las películas disponibles, así como el 
+            diseño y desarrollo de un backend escalable y seguro para manejar las solicitudes de los usuarios.
+        </li>
+        <li>
+            Tecnologías utilizadas:
+            <ul>
+                <li>Lenguajes HTML, CSS, JavaScript</li>
+                <li>Bases de datos MongoDB</li>
+                <li>Sistemas de control de versiones Git</li>
+                <li>Bibliotecas y APIs para el manejo de videos y multimedia</li>
+            </ul>
+        </li>
+    </ul>
+</div>

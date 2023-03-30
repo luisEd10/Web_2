@@ -1,0 +1,20 @@
+<div *ngIf="cargando" class="cargando">
+    <img src="https://sp-ao.shortpixel.ai/client/to_webp,q_glossy,ret_img,w_800,h_600/https://codigofuente.io/wp-content/uploads/2018/09/progress.gif" alt="">
+</div>
+
+<p *ngIf="!cargando"><strong>Educación</strong></p>
+
+<div class="container" *ngIf="!cargando">
+    <div class="Informacion">
+        <ul>
+            <li>Universidad</li>
+            <span>Nombre: Instituto Tecnológico y de Estudios Superiores de Occidente</span> <br>
+            <span>Titulo: Ingenieria en sistema computacionales</span> <br>
+            <span>Fecha de inicio: Enero del 2020</span> <br> 
+        </ul>
+    </div>
+    <div class="Image">
+        <img src="https://justatic.com/v/20230309103826/marketing/files/new/production/images/mexico/organizations/instituto-tecnologico-y-de-estudios-superiores-de-occidente-logo.png" alt="ITESO">
+    </div>
+</div>
+
